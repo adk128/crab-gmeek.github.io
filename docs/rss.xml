@@ -1,5 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>博客记录</title><link>https://adk128.github.io/crab-gmeek.github.io</link><description>我的博客记录</description><copyright>博客记录</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.com/adk128/crab-gmeek.github.io/blob/main/crab.jpg</url><title>avatar</title><link>https://adk128.github.io/crab-gmeek.github.io</link></image><lastBuildDate>Fri, 26 Sep 2025 11:16:09 +0000</lastBuildDate><managingEditor>博客记录</managingEditor><ttl>60</ttl><webMaster>博客记录</webMaster><item><title>卷积相关概念</title><link>https://adk128.github.io/crab-gmeek.github.io/post/juan-ji-xiang-guan-gai-nian.html</link><description>​
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>博客记录</title><link>https://adk128.github.io/crab-gmeek.github.io</link><description>我的博客记录</description><copyright>博客记录</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.com/adk128/crab-gmeek.github.io/blob/main/crab.jpg</url><title>avatar</title><link>https://adk128.github.io/crab-gmeek.github.io</link></image><lastBuildDate>Fri, 26 Sep 2025 11:33:37 +0000</lastBuildDate><managingEditor>博客记录</managingEditor><ttl>60</ttl><webMaster>博客记录</webMaster><item><title>321表达法-3个基本功</title><link>https://adk128.github.io/crab-gmeek.github.io/post/321-biao-da-fa--3-ge-ji-ben-gong.html</link><description># 321表达法
+
+《言值》，视频课《非暴力沟通》
+
+**表达分为两个部分，表和达，表是做出的努力，达是达成的效果。</description><guid isPermaLink="true">https://adk128.github.io/crab-gmeek.github.io/post/321-biao-da-fa--3-ge-ji-ben-gong.html</guid><pubDate>Fri, 26 Sep 2025 11:33:09 +0000</pubDate></item><item><title>卷积相关概念</title><link>https://adk128.github.io/crab-gmeek.github.io/post/juan-ji-xiang-guan-gai-nian.html</link><description>​
 **卷积计算层**
 深度Depth=kernel的数量=filter的数量
 步长Stride：窗口一次滑动的长度
