@@ -1,5 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>博客记录</title><link>https://adk128.github.io/crab-gmeek.github.io</link><description>我的博客记录</description><copyright>博客记录</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.com/adk128/crab-gmeek.github.io/blob/main/crab.jpg</url><title>avatar</title><link>https://adk128.github.io/crab-gmeek.github.io</link></image><lastBuildDate>Sat, 20 Sep 2025 15:23:51 +0000</lastBuildDate><managingEditor>博客记录</managingEditor><ttl>60</ttl><webMaster>博客记录</webMaster><item><title>统计媒体文件时长</title><link>https://adk128.github.io/crab-gmeek.github.io/post/tong-ji-mei-ti-wen-jian-shi-chang.html</link><description># 统计文件夹中的mp3时长
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>博客记录</title><link>https://adk128.github.io/crab-gmeek.github.io</link><description>我的博客记录</description><copyright>博客记录</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.com/adk128/crab-gmeek.github.io/blob/main/crab.jpg</url><title>avatar</title><link>https://adk128.github.io/crab-gmeek.github.io</link></image><lastBuildDate>Fri, 26 Sep 2025 11:16:09 +0000</lastBuildDate><managingEditor>博客记录</managingEditor><ttl>60</ttl><webMaster>博客记录</webMaster><item><title>卷积相关概念</title><link>https://adk128.github.io/crab-gmeek.github.io/post/juan-ji-xiang-guan-gai-nian.html</link><description>​
+**卷积计算层**
+深度Depth=kernel的数量=filter的数量
+步长Stride：窗口一次滑动的长度
+填充值padding：当步长设置大时，最后剩下的图像边缘不够滑动，在整个图像数个像素的宽度
+输出窗口宽=（输入宽口长/宽 - 卷积核长/宽 + 2 * padding大小）/ stride + 1
+
+输出窗口高 = 输出窗口宽
+
+**池化**
+作用：压缩图像尺寸，同时保证图像的质量，分层压缩。</description><guid isPermaLink="true">https://adk128.github.io/crab-gmeek.github.io/post/juan-ji-xiang-guan-gai-nian.html</guid><pubDate>Fri, 26 Sep 2025 11:15:30 +0000</pubDate></item><item><title>统计媒体文件时长</title><link>https://adk128.github.io/crab-gmeek.github.io/post/tong-ji-mei-ti-wen-jian-shi-chang.html</link><description># 统计文件夹中的mp3时长
 
 ```python
 import os
