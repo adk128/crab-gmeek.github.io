@@ -1,5 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>博客记录</title><link>https://adk128.github.io/crab-gmeek.github.io</link><description>我的博客记录</description><copyright>博客记录</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.com/user-attachments/assets/029696d7-039d-4007-9905-30758663c93e</url><title>avatar</title><link>https://adk128.github.io/crab-gmeek.github.io</link></image><lastBuildDate>Mon, 29 Sep 2025 13:32:23 +0000</lastBuildDate><managingEditor>博客记录</managingEditor><ttl>60</ttl><webMaster>博客记录</webMaster><item><title>deepseek提示词教程</title><link>https://adk128.github.io/crab-gmeek.github.io/post/deepseek-ti-shi-ci-jiao-cheng.html</link><description>## 提示词要求 
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>博客记录</title><link>https://adk128.github.io/crab-gmeek.github.io</link><description>我的博客记录</description><copyright>博客记录</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.com/user-attachments/assets/029696d7-039d-4007-9905-30758663c93e</url><title>avatar</title><link>https://adk128.github.io/crab-gmeek.github.io</link></image><lastBuildDate>Thu, 02 Oct 2025 02:03:10 +0000</lastBuildDate><managingEditor>博客记录</managingEditor><ttl>60</ttl><webMaster>博客记录</webMaster><item><title>高手接话</title><link>https://adk128.github.io/crab-gmeek.github.io/post/gao-shou-jie-hua.html</link><description>## 垫词
+
+### 俏皮话
+
+符合理性的俏皮话是最佳的，不符合理性的那就是调侃。</description><guid isPermaLink="true">https://adk128.github.io/crab-gmeek.github.io/post/gao-shou-jie-hua.html</guid><pubDate>Thu, 02 Oct 2025 02:02:26 +0000</pubDate></item><item><title>deepseek提示词教程</title><link>https://adk128.github.io/crab-gmeek.github.io/post/deepseek-ti-shi-ci-jiao-cheng.html</link><description>## 提示词要求 
 - **推理模型**
 
 需要明确任务目标和需求
