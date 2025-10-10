@@ -18,3 +18,10 @@ result_finditer = re.finditer(r'\d+', s)
 print(result_match.group(1),result_findall,result_search,sep='\n')
 for item in result_finditer:
     print(item.group(),item.start(),item.end(),sep='\t')
+~~~
+~~~ markdown
+123
+['123', '51156']
+<re.Match object; span=(4, 7), match='123'>
+123	4	7
+51156	10	15

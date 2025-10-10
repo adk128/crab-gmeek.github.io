@@ -29,7 +29,14 @@ result_finditer = re.finditer(r'\d+', s)
 
 print(result_match.group(1),result_findall,result_search,sep='\n')
 for item in result_finditer:
-    print(item.group(),item.start(),item.end(),sep='\t')。">
+    print(item.group(),item.start(),item.end(),sep='\t')
+~~~
+~~~ markdown
+123
+['123', '51156']
+<re.Match object; span=(4, 7), match='123'>
+123	4	7
+51156	10	15。">
 <meta property="og:title" content="python正则表达式">
 <meta property="og:description" content="- match只匹配一次
 - findall匹配所有结果
@@ -50,7 +57,14 @@ result_finditer = re.finditer(r'\d+', s)
 
 print(result_match.group(1),result_findall,result_search,sep='\n')
 for item in result_finditer:
-    print(item.group(),item.start(),item.end(),sep='\t')。">
+    print(item.group(),item.start(),item.end(),sep='\t')
+~~~
+~~~ markdown
+123
+['123', '51156']
+<re.Match object; span=(4, 7), match='123'>
+123	4	7
+51156	10	15。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://adk128.github.io/crab-gmeek.github.io/post/python-zheng-ze-biao-da-shi.html">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/Meekdai/meekdai.github.io/logo64.jpg">
@@ -140,7 +154,12 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 
 <span class="pl-en">print</span>(<span class="pl-s1">result_match</span>.<span class="pl-c1">group</span>(<span class="pl-c1">1</span>),<span class="pl-s1">result_findall</span>,<span class="pl-s1">result_search</span>,<span class="pl-s1">sep</span><span class="pl-c1">=</span><span class="pl-s">'<span class="pl-cce">\n</span>'</span>)
 <span class="pl-k">for</span> <span class="pl-s1">item</span> <span class="pl-c1">in</span> <span class="pl-s1">result_finditer</span>:
-    <span class="pl-en">print</span>(<span class="pl-s1">item</span>.<span class="pl-c1">group</span>(),<span class="pl-s1">item</span>.<span class="pl-c1">start</span>(),<span class="pl-s1">item</span>.<span class="pl-c1">end</span>(),<span class="pl-s1">sep</span><span class="pl-c1">=</span><span class="pl-s">'<span class="pl-cce">\t</span>'</span>)</pre></div></div>
+    <span class="pl-en">print</span>(<span class="pl-s1">item</span>.<span class="pl-c1">group</span>(),<span class="pl-s1">item</span>.<span class="pl-c1">start</span>(),<span class="pl-s1">item</span>.<span class="pl-c1">end</span>(),<span class="pl-s1">sep</span><span class="pl-c1">=</span><span class="pl-s">'<span class="pl-cce">\t</span>'</span>)</pre></div>
+<div class="highlight highlight-text-md"><pre class="notranslate">123
+<span class="pl-s">[</span>'123', '51156'<span class="pl-s">]</span>
+&lt;re.Match object; span=(4, 7), match='123'&gt;
+123	4	7
+51156	10	15</pre></div></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
