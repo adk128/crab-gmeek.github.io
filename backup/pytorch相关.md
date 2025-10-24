@@ -73,3 +73,25 @@ logsoft = soft.log()
 print(soft)
 print(logsoft)
 ```
+#### 观察模型参数第1种
+```python
+print("=============更新之前===========")
+        for name, parms in net.named_parameters():	
+                print('-->name:', name)
+                print('-->para:', parms)
+                print('-->grad_requirs:',parms.requires_grad)
+                print('-->grad_value:',parms.grad)
+                print("===")
+print("=============更新之后===========")
+        for name, parms in net.named_parameters():	
+            print('-->name:', name)
+            print('-->para:', parms)
+            print('-->grad_requirs:',parms.requires_grad)
+            print('-->grad_value:',parms.grad)
+            print("===")
+        print(optimizer)
+```
+#### 观察模型参数第2种
+```python
+print(net.state_dict())
+```
