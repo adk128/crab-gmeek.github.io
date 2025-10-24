@@ -55,6 +55,36 @@ tensor([[3],
         [5],
         [2]])
 ```
+#### softmax和logsoftmax
+```python
+import torch
+import torch.nn.functional as F
+logits = torch.rand(2,2)
+pred = F.softmax(logits, dim=-1)
+pred1 = F.log_softmax(logits, dim=-1)
+print(logits)
+print(pred)
+print(pred.log())
+print(pred1)
+```
+```plaintext
+tensor([[0.8926, 0.8885],
+        [0.7748, 0.5256]])
+tensor([[0.5010, 0.4990],
+        [0.5620, 0.4380]])
+tensor([[-0.6911, -0.6952],
+        [-0.5763, -0.8255]])
+tensor([[-0.6911, -0.6952],
+        [-0.5763, -0.8255]])
+```
+#### 手动实现softmax和logsoftmax
+**注意sum之后需要unsqeeze(-1)**
+```python
+soft = logits.exp()/(logits.exp().sum(dim=1)).unsqueeze(-1)
+logsoft = soft.log()
+print(soft)
+print(logsoft)
+```
 。">
 <meta property="og:title" content="pytorch相关">
 <meta property="og:description" content="#### F.nll_loss()的用法
@@ -101,6 +131,36 @@ tensor([[3],
         [2],
         [5],
         [2]])
+```
+#### softmax和logsoftmax
+```python
+import torch
+import torch.nn.functional as F
+logits = torch.rand(2,2)
+pred = F.softmax(logits, dim=-1)
+pred1 = F.log_softmax(logits, dim=-1)
+print(logits)
+print(pred)
+print(pred.log())
+print(pred1)
+```
+```plaintext
+tensor([[0.8926, 0.8885],
+        [0.7748, 0.5256]])
+tensor([[0.5010, 0.4990],
+        [0.5620, 0.4380]])
+tensor([[-0.6911, -0.6952],
+        [-0.5763, -0.8255]])
+tensor([[-0.6911, -0.6952],
+        [-0.5763, -0.8255]])
+```
+#### 手动实现softmax和logsoftmax
+**注意sum之后需要unsqeeze(-1)**
+```python
+soft = logits.exp()/(logits.exp().sum(dim=1)).unsqueeze(-1)
+logsoft = soft.log()
+print(soft)
+print(logsoft)
 ```
 。">
 <meta property="og:type" content="article">
@@ -211,7 +271,32 @@ tensor([[3],
         [2],
         [5],
         [2]])
-</code></pre></div>
+</code></pre>
+<h4>softmax和logsoftmax</h4>
+<div class="highlight highlight-source-python"><pre class="notranslate"><span class="pl-k">import</span> <span class="pl-s1">torch</span>
+<span class="pl-k">import</span> <span class="pl-s1">torch</span>.<span class="pl-s1">nn</span>.<span class="pl-s1">functional</span> <span class="pl-k">as</span> <span class="pl-c1">F</span>
+<span class="pl-s1">logits</span> <span class="pl-c1">=</span> <span class="pl-s1">torch</span>.<span class="pl-c1">rand</span>(<span class="pl-c1">2</span>,<span class="pl-c1">2</span>)
+<span class="pl-s1">pred</span> <span class="pl-c1">=</span> <span class="pl-c1">F</span>.<span class="pl-c1">softmax</span>(<span class="pl-s1">logits</span>, <span class="pl-s1">dim</span><span class="pl-c1">=</span><span class="pl-c1">-</span><span class="pl-c1">1</span>)
+<span class="pl-s1">pred1</span> <span class="pl-c1">=</span> <span class="pl-c1">F</span>.<span class="pl-c1">log_softmax</span>(<span class="pl-s1">logits</span>, <span class="pl-s1">dim</span><span class="pl-c1">=</span><span class="pl-c1">-</span><span class="pl-c1">1</span>)
+<span class="pl-en">print</span>(<span class="pl-s1">logits</span>)
+<span class="pl-en">print</span>(<span class="pl-s1">pred</span>)
+<span class="pl-en">print</span>(<span class="pl-s1">pred</span>.<span class="pl-c1">log</span>())
+<span class="pl-en">print</span>(<span class="pl-s1">pred1</span>)</pre></div>
+<pre lang="plaintext" class="notranslate"><code class="notranslate">tensor([[0.8926, 0.8885],
+        [0.7748, 0.5256]])
+tensor([[0.5010, 0.4990],
+        [0.5620, 0.4380]])
+tensor([[-0.6911, -0.6952],
+        [-0.5763, -0.8255]])
+tensor([[-0.6911, -0.6952],
+        [-0.5763, -0.8255]])
+</code></pre>
+<h4>手动实现softmax和logsoftmax</h4>
+<p><strong>注意sum之后需要unsqeeze(-1)</strong></p>
+<div class="highlight highlight-source-python"><pre class="notranslate"><span class="pl-s1">soft</span> <span class="pl-c1">=</span> <span class="pl-s1">logits</span>.<span class="pl-c1">exp</span>()<span class="pl-c1">/</span>(<span class="pl-s1">logits</span>.<span class="pl-c1">exp</span>().<span class="pl-c1">sum</span>(<span class="pl-s1">dim</span><span class="pl-c1">=</span><span class="pl-c1">1</span>)).<span class="pl-c1">unsqueeze</span>(<span class="pl-c1">-</span><span class="pl-c1">1</span>)
+<span class="pl-s1">logsoft</span> <span class="pl-c1">=</span> <span class="pl-s1">soft</span>.<span class="pl-c1">log</span>()
+<span class="pl-en">print</span>(<span class="pl-s1">soft</span>)
+<span class="pl-en">print</span>(<span class="pl-s1">logsoft</span>)</pre></div></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>

@@ -43,3 +43,33 @@ tensor([[3],
         [5],
         [2]])
 ```
+#### softmax和logsoftmax
+```python
+import torch
+import torch.nn.functional as F
+logits = torch.rand(2,2)
+pred = F.softmax(logits, dim=-1)
+pred1 = F.log_softmax(logits, dim=-1)
+print(logits)
+print(pred)
+print(pred.log())
+print(pred1)
+```
+```plaintext
+tensor([[0.8926, 0.8885],
+        [0.7748, 0.5256]])
+tensor([[0.5010, 0.4990],
+        [0.5620, 0.4380]])
+tensor([[-0.6911, -0.6952],
+        [-0.5763, -0.8255]])
+tensor([[-0.6911, -0.6952],
+        [-0.5763, -0.8255]])
+```
+#### 手动实现softmax和logsoftmax
+**注意sum之后需要unsqeeze(-1)**
+```python
+soft = logits.exp()/(logits.exp().sum(dim=1)).unsqueeze(-1)
+logsoft = soft.log()
+print(soft)
+print(logsoft)
+```
