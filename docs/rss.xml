@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>博客记录</title><link>https://adk128.github.io/crab-gmeek.github.io</link><description>我的博客记录</description><copyright>博客记录</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.com/user-attachments/assets/029696d7-039d-4007-9905-30758663c93e</url><title>avatar</title><link>https://adk128.github.io/crab-gmeek.github.io</link></image><lastBuildDate>Fri, 10 Oct 2025 10:01:49 +0000</lastBuildDate><managingEditor>博客记录</managingEditor><ttl>60</ttl><webMaster>博客记录</webMaster><item><title>python正则表达式</title><link>https://adk128.github.io/crab-gmeek.github.io/post/python-zheng-ze-biao-da-shi.html</link><description>- match只匹配一次
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>博客记录</title><link>https://adk128.github.io/crab-gmeek.github.io</link><description>我的博客记录</description><copyright>博客记录</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.com/user-attachments/assets/029696d7-039d-4007-9905-30758663c93e</url><title>avatar</title><link>https://adk128.github.io/crab-gmeek.github.io</link></image><lastBuildDate>Fri, 24 Oct 2025 06:21:38 +0000</lastBuildDate><managingEditor>博客记录</managingEditor><ttl>60</ttl><webMaster>博客记录</webMaster><item><title>python正则表达式</title><link>https://adk128.github.io/crab-gmeek.github.io/post/python-zheng-ze-biao-da-shi.html</link><description>- match只匹配一次
 - findall匹配所有结果
 - search匹配一次结果的索引
 - finditer匹配匹配所有结果的索引
@@ -113,7 +113,7 @@ You are a helpful assistant.
 步长Stride：窗口一次滑动的长度
 填充值padding：当步长设置大时，最后剩下的图像边缘不够滑动，在整个图像数个像素的宽度
 输出窗口宽=（输入宽口长/宽 - 卷积核长/宽 + 2 * padding大小）/ stride + 1
-
+$W_{out}=\frac{W_{in}-K_w+2*padding}{S_w}+1$
 输出窗口高 = 输出窗口宽
 
 **池化**

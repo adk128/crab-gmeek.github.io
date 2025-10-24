@@ -16,7 +16,7 @@
 步长Stride：窗口一次滑动的长度
 填充值padding：当步长设置大时，最后剩下的图像边缘不够滑动，在整个图像数个像素的宽度
 输出窗口宽=（输入宽口长/宽 - 卷积核长/宽 + 2 * padding大小）/ stride + 1
-
+$W_{out}=\frac{W_{in}-K_w+2*padding}{S_w}+1$
 输出窗口高 = 输出窗口宽
 
 **池化**
@@ -28,7 +28,7 @@
 步长Stride：窗口一次滑动的长度
 填充值padding：当步长设置大时，最后剩下的图像边缘不够滑动，在整个图像数个像素的宽度
 输出窗口宽=（输入宽口长/宽 - 卷积核长/宽 + 2 * padding大小）/ stride + 1
-
+$W_{out}=\frac{W_{in}-K_w+2*padding}{S_w}+1$
 输出窗口高 = 输出窗口宽
 
 **池化**
@@ -98,8 +98,9 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 深度Depth=kernel的数量=filter的数量<br>
 步长Stride：窗口一次滑动的长度<br>
 填充值padding：当步长设置大时，最后剩下的图像边缘不够滑动，在整个图像数个像素的宽度<br>
-输出窗口宽=（输入宽口长/宽 - 卷积核长/宽 + 2 * padding大小）/ stride + 1</p>
-<p>输出窗口高 = 输出窗口宽</p>
+输出窗口宽=（输入宽口长/宽 - 卷积核长/宽 + 2 * padding大小）/ stride + 1<br>
+$W_{out}=\frac{W_{in}-K_w+2*padding}{S_w}+1$<br>
+输出窗口高 = 输出窗口宽</p>
 <p><strong>池化</strong><br>
 作用：压缩图像尺寸，同时保证图像的质量，分层压缩。</p>
 <p>方法：取区域平均/最大</p>
@@ -227,6 +228,6 @@ function iFrameLoading(){
 
 
 </script>
-
+<script>MathJax = {tex: {inlineMath: [["$", "$"]]}};</script><script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 </html>
