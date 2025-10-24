@@ -40,10 +40,12 @@ for item in result_finditer:
 51156	10	15
 ```
 #### 获取时间名字
+```python
 import time
 fv = time.strftime('%m%d_%H%M', time.localtime())
-print(fv)
-
+with open(f'./{fv}.txt','a') as fb:
+    fb.write('hello world')
+```
 
 
 。">
@@ -78,10 +80,12 @@ for item in result_finditer:
 51156	10	15
 ```
 #### 获取时间名字
+```python
 import time
 fv = time.strftime('%m%d_%H%M', time.localtime())
-print(fv)
-
+with open(f'./{fv}.txt','a') as fb:
+    fb.write('hello world')
+```
 
 
 。">
@@ -183,9 +187,10 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 51156	10	15
 </code></pre>
 <h4>获取时间名字</h4>
-<p>import time<br>
-fv = time.strftime('%m%d_%H%M', time.localtime())<br>
-print(fv)</p></div>
+<div class="highlight highlight-source-python"><pre class="notranslate"><span class="pl-k">import</span> <span class="pl-s1">time</span>
+<span class="pl-s1">fv</span> <span class="pl-c1">=</span> <span class="pl-s1">time</span>.<span class="pl-c1">strftime</span>(<span class="pl-s">'%m%d_%H%M'</span>, <span class="pl-s1">time</span>.<span class="pl-c1">localtime</span>())
+<span class="pl-k">with</span> <span class="pl-en">open</span>(<span class="pl-s">f'./<span class="pl-s1"><span class="pl-kos">{</span><span class="pl-s1">fv</span><span class="pl-kos">}</span></span>.txt'</span>,<span class="pl-s">'a'</span>) <span class="pl-k">as</span> <span class="pl-s1">fb</span>:
+    <span class="pl-s1">fb</span>.<span class="pl-c1">write</span>(<span class="pl-s">'hello world'</span>)</pre></div></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>

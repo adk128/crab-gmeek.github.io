@@ -28,9 +28,11 @@ for item in result_finditer:
 51156	10	15
 ```
 #### 获取时间名字
+```python
 import time
 fv = time.strftime('%m%d_%H%M', time.localtime())
-print(fv)
-
+with open(f'./{fv}.txt','a') as fb:
+    fb.write('hello world')
+```
 
 
