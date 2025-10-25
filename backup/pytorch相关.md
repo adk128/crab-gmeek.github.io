@@ -1,4 +1,4 @@
-#### F.nll_loss()的用法
+### F.nll_loss()的用法
 ```python
 import torch
 import torch.nn as nn
@@ -21,7 +21,7 @@ tensor([[0.1187, 0.5472, 0.1068, 0.7665, 0.0128, 0.3709, 0.9943, 0.0043],
 torch.Size([4, 8]) torch.Size([4, 1])
 tensor(-0.4999)
 ```
-#### torch.searchsorted()用法
+### torch.searchsorted()用法
 ```python
 import torch
 bins = torch.rand((4,8))
@@ -43,7 +43,7 @@ tensor([[3],
         [5],
         [2]])
 ```
-#### softmax和logsoftmax
+### softmax和logsoftmax
 ```python
 import torch
 import torch.nn.functional as F
@@ -65,7 +65,7 @@ tensor([[-0.6911, -0.6952],
 tensor([[-0.6911, -0.6952],
         [-0.5763, -0.8255]])
 ```
-#### 手动实现softmax和logsoftmax
+### 手动实现softmax和logsoftmax
 **注意sum之后需要unsqeeze(-1)**
 ```python
 soft = logits.exp()/(logits.exp().sum(dim=1)).unsqueeze(-1)
@@ -73,7 +73,7 @@ logsoft = soft.log()
 print(soft)
 print(logsoft)
 ```
-#### 观察模型参数第1种
+### 观察模型参数第1种
 ```python
 print("=============更新之前===========")
         for name, parms in net.named_parameters():	
@@ -91,7 +91,7 @@ print("=============更新之后===========")
             print("===")
         print(optimizer)
 ```
-#### 观察模型参数第2种
+### 观察模型参数第2种
 ```python
 print(net.state_dict())
 ```

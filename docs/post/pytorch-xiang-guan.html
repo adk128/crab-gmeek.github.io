@@ -10,7 +10,7 @@
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
-<meta name="description" content="#### F.nll_loss()的用法
+<meta name="description" content="### F.nll_loss()的用法
 ```python
 import torch
 import torch.nn as nn
@@ -33,7 +33,7 @@ tensor([[0.1187, 0.5472, 0.1068, 0.7665, 0.0128, 0.3709, 0.9943, 0.0043],
 torch.Size([4, 8]) torch.Size([4, 1])
 tensor(-0.4999)
 ```
-#### torch.searchsorted()用法
+### torch.searchsorted()用法
 ```python
 import torch
 bins = torch.rand((4,8))
@@ -55,7 +55,7 @@ tensor([[3],
         [5],
         [2]])
 ```
-#### softmax和logsoftmax
+### softmax和logsoftmax
 ```python
 import torch
 import torch.nn.functional as F
@@ -77,7 +77,7 @@ tensor([[-0.6911, -0.6952],
 tensor([[-0.6911, -0.6952],
         [-0.5763, -0.8255]])
 ```
-#### 手动实现softmax和logsoftmax
+### 手动实现softmax和logsoftmax
 **注意sum之后需要unsqeeze(-1)**
 ```python
 soft = logits.exp()/(logits.exp().sum(dim=1)).unsqueeze(-1)
@@ -85,7 +85,7 @@ logsoft = soft.log()
 print(soft)
 print(logsoft)
 ```
-#### 观察模型参数第1种
+### 观察模型参数第1种
 ```python
 print('=============更新之前===========')
         for name, parms in net.named_parameters():	
@@ -103,12 +103,12 @@ print('=============更新之后===========')
             print('===')
         print(optimizer)
 ```
-#### 观察模型参数第2种
+### 观察模型参数第2种
 ```python
 print(net.state_dict())
 ```。">
 <meta property="og:title" content="pytorch相关">
-<meta property="og:description" content="#### F.nll_loss()的用法
+<meta property="og:description" content="### F.nll_loss()的用法
 ```python
 import torch
 import torch.nn as nn
@@ -131,7 +131,7 @@ tensor([[0.1187, 0.5472, 0.1068, 0.7665, 0.0128, 0.3709, 0.9943, 0.0043],
 torch.Size([4, 8]) torch.Size([4, 1])
 tensor(-0.4999)
 ```
-#### torch.searchsorted()用法
+### torch.searchsorted()用法
 ```python
 import torch
 bins = torch.rand((4,8))
@@ -153,7 +153,7 @@ tensor([[3],
         [5],
         [2]])
 ```
-#### softmax和logsoftmax
+### softmax和logsoftmax
 ```python
 import torch
 import torch.nn.functional as F
@@ -175,7 +175,7 @@ tensor([[-0.6911, -0.6952],
 tensor([[-0.6911, -0.6952],
         [-0.5763, -0.8255]])
 ```
-#### 手动实现softmax和logsoftmax
+### 手动实现softmax和logsoftmax
 **注意sum之后需要unsqeeze(-1)**
 ```python
 soft = logits.exp()/(logits.exp().sum(dim=1)).unsqueeze(-1)
@@ -183,7 +183,7 @@ logsoft = soft.log()
 print(soft)
 print(logsoft)
 ```
-#### 观察模型参数第1种
+### 观察模型参数第1种
 ```python
 print('=============更新之前===========')
         for name, parms in net.named_parameters():	
@@ -201,7 +201,7 @@ print('=============更新之后===========')
             print('===')
         print(optimizer)
 ```
-#### 观察模型参数第2种
+### 观察模型参数第2种
 ```python
 print(net.state_dict())
 ```。">
@@ -275,7 +275,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody"><h4>F.nll_loss()的用法</h4>
+<div class="markdown-body" id="postBody"><h3>F.nll_loss()的用法</h3>
 <div class="highlight highlight-source-python"><pre class="notranslate"><span class="pl-k">import</span> <span class="pl-s1">torch</span>
 <span class="pl-k">import</span> <span class="pl-s1">torch</span>.<span class="pl-s1">nn</span> <span class="pl-k">as</span> <span class="pl-s1">nn</span>
 <span class="pl-k">import</span> <span class="pl-s1">torch</span>.<span class="pl-s1">nn</span>.<span class="pl-s1">functional</span> <span class="pl-k">as</span> <span class="pl-c1">F</span>
@@ -295,7 +295,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 torch.Size([4, 8]) torch.Size([4, 1])
 tensor(-0.4999)
 </code></pre>
-<h4>torch.searchsorted()用法</h4>
+<h3>torch.searchsorted()用法</h3>
 <div class="highlight highlight-source-python"><pre class="notranslate"><span class="pl-k">import</span> <span class="pl-s1">torch</span>
 <span class="pl-s1">bins</span> <span class="pl-c1">=</span> <span class="pl-s1">torch</span>.<span class="pl-c1">rand</span>((<span class="pl-c1">4</span>,<span class="pl-c1">8</span>))
 <span class="pl-s1">bins</span> <span class="pl-c1">=</span> <span class="pl-s1">bins</span>.<span class="pl-c1">cumsum</span>(<span class="pl-c1">1</span>)<span class="pl-c1">/</span><span class="pl-s1">bins</span>.<span class="pl-c1">sum</span>(<span class="pl-c1">1</span>).<span class="pl-c1">unsqueeze</span>(<span class="pl-c1">1</span>)
@@ -314,7 +314,7 @@ tensor([[3],
         [5],
         [2]])
 </code></pre>
-<h4>softmax和logsoftmax</h4>
+<h3>softmax和logsoftmax</h3>
 <div class="highlight highlight-source-python"><pre class="notranslate"><span class="pl-k">import</span> <span class="pl-s1">torch</span>
 <span class="pl-k">import</span> <span class="pl-s1">torch</span>.<span class="pl-s1">nn</span>.<span class="pl-s1">functional</span> <span class="pl-k">as</span> <span class="pl-c1">F</span>
 <span class="pl-s1">logits</span> <span class="pl-c1">=</span> <span class="pl-s1">torch</span>.<span class="pl-c1">rand</span>(<span class="pl-c1">2</span>,<span class="pl-c1">2</span>)
@@ -333,13 +333,13 @@ tensor([[-0.6911, -0.6952],
 tensor([[-0.6911, -0.6952],
         [-0.5763, -0.8255]])
 </code></pre>
-<h4>手动实现softmax和logsoftmax</h4>
+<h3>手动实现softmax和logsoftmax</h3>
 <p><strong>注意sum之后需要unsqeeze(-1)</strong></p>
 <div class="highlight highlight-source-python"><pre class="notranslate"><span class="pl-s1">soft</span> <span class="pl-c1">=</span> <span class="pl-s1">logits</span>.<span class="pl-c1">exp</span>()<span class="pl-c1">/</span>(<span class="pl-s1">logits</span>.<span class="pl-c1">exp</span>().<span class="pl-c1">sum</span>(<span class="pl-s1">dim</span><span class="pl-c1">=</span><span class="pl-c1">1</span>)).<span class="pl-c1">unsqueeze</span>(<span class="pl-c1">-</span><span class="pl-c1">1</span>)
 <span class="pl-s1">logsoft</span> <span class="pl-c1">=</span> <span class="pl-s1">soft</span>.<span class="pl-c1">log</span>()
 <span class="pl-en">print</span>(<span class="pl-s1">soft</span>)
 <span class="pl-en">print</span>(<span class="pl-s1">logsoft</span>)</pre></div>
-<h4>观察模型参数第1种</h4>
+<h3>观察模型参数第1种</h3>
 <div class="highlight highlight-source-python"><pre class="notranslate"><span class="pl-en">print</span>(<span class="pl-s">"=============更新之前==========="</span>)
         <span class="pl-k">for</span> <span class="pl-s1">name</span>, <span class="pl-s1">parms</span> <span class="pl-c1">in</span> <span class="pl-s1">net</span>.<span class="pl-c1">named_parameters</span>():	
                 <span class="pl-en">print</span>(<span class="pl-s">'--&gt;name:'</span>, <span class="pl-s1">name</span>)
@@ -355,7 +355,7 @@ tensor([[-0.6911, -0.6952],
             <span class="pl-en">print</span>(<span class="pl-s">'--&gt;grad_value:'</span>,<span class="pl-s1">parms</span>.<span class="pl-c1">grad</span>)
             <span class="pl-en">print</span>(<span class="pl-s">"==="</span>)
         <span class="pl-en">print</span>(<span class="pl-s1">optimizer</span>)</pre></div>
-<h4>观察模型参数第2种</h4>
+<h3>观察模型参数第2种</h3>
 <div class="highlight highlight-source-python"><pre class="notranslate"><span class="pl-en">print</span>(<span class="pl-s1">net</span>.<span class="pl-c1">state_dict</span>())</pre></div></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
