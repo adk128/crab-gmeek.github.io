@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>博客记录</title><link>https://adk128.github.io/crab-gmeek.github.io</link><description>我的博客记录</description><copyright>博客记录</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.com/user-attachments/assets/029696d7-039d-4007-9905-30758663c93e</url><title>avatar</title><link>https://adk128.github.io/crab-gmeek.github.io</link></image><lastBuildDate>Thu, 06 Nov 2025 11:23:40 +0000</lastBuildDate><managingEditor>博客记录</managingEditor><ttl>60</ttl><webMaster>博客记录</webMaster><item><title>减肥相关问题</title><link>https://adk128.github.io/crab-gmeek.github.io/post/jian-fei-xiang-guan-wen-ti.html</link><description>#### 饮食热量分析
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>博客记录</title><link>https://adk128.github.io/crab-gmeek.github.io</link><description>我的博客记录</description><copyright>博客记录</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.com/user-attachments/assets/029696d7-039d-4007-9905-30758663c93e</url><title>avatar</title><link>https://adk128.github.io/crab-gmeek.github.io</link></image><lastBuildDate>Fri, 07 Nov 2025 08:30:09 +0000</lastBuildDate><managingEditor>博客记录</managingEditor><ttl>60</ttl><webMaster>博客记录</webMaster><item><title>减肥相关问题</title><link>https://adk128.github.io/crab-gmeek.github.io/post/jian-fei-xiang-guan-wen-ti.html</link><description># 饮食热量分析
 ```plaintext
 早餐：
 2个水煮蛋，无糖豆浆（+3勺燕麦+20g南瓜籽+10g扁桃仁+一勺亚麻籽粉）
@@ -9,7 +9,7 @@
 晚餐：
 2个水煮蛋，100g盐炒鹰嘴豆（1722KJ/100g）
 ```
-```plaintext
+
 好的，我们根据你更新的晚餐内容重新计算。</description><guid isPermaLink="true">https://adk128.github.io/crab-gmeek.github.io/post/jian-fei-xiang-guan-wen-ti.html</guid><pubDate>Thu, 06 Nov 2025 11:23:14 +0000</pubDate></item><item><title>社会学相关问题</title><link>https://adk128.github.io/crab-gmeek.github.io/post/she-hui-xue-xiang-guan-wen-ti.html</link><description>### 抖音上很多人都喜欢某个博主，那么这个博主即使发个照片展示自己的身材，即使是一般人看来确实很普通的身材，如果某一路过的人只是说她的身材很普通，就会被她的粉丝会攻击，即使发表中立的话也不行，非得让你发表赞扬，分析一下这种现象
 
 这种现象在社交媒体上非常常见，其背后涉及心理学、社交动力学和互联网文化的多重因素。</description><guid isPermaLink="true">https://adk128.github.io/crab-gmeek.github.io/post/she-hui-xue-xiang-guan-wen-ti.html</guid><pubDate>Sat, 25 Oct 2025 07:26:14 +0000</pubDate></item><item><title>深度学习相关问题</title><link>https://adk128.github.io/crab-gmeek.github.io/post/shen-du-xue-xi-xiang-guan-wen-ti.html</link><description>### 常见模型__init__()中的super().__init__()语句有什么作用？
